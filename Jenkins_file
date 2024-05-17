@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GIT') {
             steps {
-                git url: 'https://github.com/eyadrihmi/projet_Devops.git'
+                git url: 'https://github.com/ferjaniryhab/pfe-backend.git'
             }
         }
 	 stage('UNIT Testing') {
