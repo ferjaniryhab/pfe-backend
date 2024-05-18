@@ -70,6 +70,13 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>3.0.0</version>
         </dependency>
+
+        <!-- Dépendance pour résoudre le problème de liaison de dépendance -->
+        <dependency>
+            <groupId>org.sonatype.oss</groupId>
+            <artifactId>oss-parent</artifactId>
+            <version>9</version>
+        </dependency>
     </dependencies>
 
     <build>
