@@ -1,0 +1,10 @@
+---
+- name:  apply YAML files to master machine
+  hosts: master
+  tasks:
+    - name: Apply YAML files on master machine
+      command: kubectl apply -f "/root/{{ item }}"
+      loop:
+        - angular-app-deployment.yaml 
+        - mysql-deployment.yaml 
+        - springboot-crud-deployment.yaml
